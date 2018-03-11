@@ -1,0 +1,13 @@
+type Shop {
+    _id: String!
+    name: String!
+    products:[Product]
+}
+
+type Query {
+  shops:[Shop]
+}
+
+type Mutation {
+  createShop(name: String!): Shop
+}

@@ -1,0 +1,11 @@
+type Product {
+    _id: String,
+    name: String,
+    price: String,
+    inStock: Boolean
+}
+
+
+extend type Mutation {
+    createProduct(name:String!, shopId:String!, price: String!): Product
+}
